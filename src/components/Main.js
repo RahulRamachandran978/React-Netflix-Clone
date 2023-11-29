@@ -13,13 +13,13 @@ const Main = () => {
             setMovies(response.data.results)
         })
     },[])
-    // console.log(movie)
+    console.log(movie)
 
     const truncateString = (str,num) =>{
         if(str?.length >num){
             return str.slice(0,num) + '...'
         }else{
-            return str
+            return str;
         }
     }
 
